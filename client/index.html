@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Notification Panel</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script type="text/javascript" src="/js/index.js"></script>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    </head>
+
+    <body>
+        <div id="main-container">
+            <ul class="navi-bar">
+                
+                <li class="navi-items">
+                    <a class="navi-links" href="#">Home</a>
+                </li>
+
+                <li class="navi-items">
+                    <a class="navi-links" href="#">Profile</a>
+                </li>
+
+                <li class="navi-items" id="noti-tab">
+                    <a class="navi-links"><i class="icon-bell"></i></a>
+                    <span class="noti-count" id="navi-noti-count"></span>
+
+                    <div class="noti-container">
+
+                        <div class="noti-title">
+                            <span class="new-noti-title">Unread Notifications </span>
+                            <span class="noti-count" id="noti-container-count"></span>
+                        </div>
+
+                        <ul class="noti-body">
+                            <li data-notiiD=1 class="noti-text">AYX commented</li>
+                            <li data-notiiD=2 class="noti-text">VHN reacted</li>
+                            <li data-notiiD=3 class="noti-text">KJL mentioned you</li>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="navi-items">
+                    <a class="navi-links" href="#">Logout</a>
+                </li>
+
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p  id="version"><a id="version-link" href="https://github.com/mytusshar">v0.0.1</a></p>
+            <p id="corp-name"><a id="version-link" href="http://github.com/">&#169 2018, ABC Private Ltd.</a> All rights reserved.</p>
+        </div>
+    
+    </body>
+</html>
